@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("/Objects/fondo index.jpg");
+    background-image: url("Objects/fondo index.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
