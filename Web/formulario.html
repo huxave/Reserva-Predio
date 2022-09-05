@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/Objects/ico.png" type="image/x-icon">
+  <title>CPCE - Formosa</title>
+</head>
+
+<body>
+  <form class="formulario">
+
+    <img src="Objects/ico.png" alt="logo" class="imgLogo" />
+
+    <h1 class="formulario__titulo">Predio Deportivo y Social</h1>
+    <h3 class="formulario__subtitulo">Solicitud de Reserva</h3>
+    <p class="formulario__parrafo">
+      Dejanos los datos del evento que querés realizar y te contestaremos a la brevedead.</p>
+
+    <label for="matriculado" class="formulario__label">Nombre y Apellido</label>
+    <input id="matriculado" type="text" class="formulario__input" placeholder="" />
+
+    <label for="profesion" class="formulario__label">Profesión</label>
+    <select id="profesion" title="" name="profesion" class="formulario__input">
+      <option selected>Elegí una opción</option>
+      <option>Contador Público</option>
+      <option>Licenciado en Administración</option>
+      <option>Licenciado en Comercio Exterior</option>
+      <option>Asociado al CPCE</option>
+      <option>Otro</option>
+    </select>
+
+    <label for="matricula" class="formulario__label">N° de Matrícula</label>
+    <input id="matricula" type="text" class="formulario__input" maxlength="11" placeholder="" />
+
+    <label for="motivo" class="formulario__label">Tipo de Evento</label>
+    <select id="motivo" title="" name="motivo" class="formulario__input">
+      <option selected>Elegí una opción...</option>
+      <option>Cumpleaños &#127874 &#127873</option>
+      <option>Agasajo &#128525 &#128293</option>
+      <option>Homenaje &#128116 &#127941 &#128117</option>
+      <option>Baby-Shower &#128118 &#127868</option>
+      <option>Gender Revelation &#128087 &#128584 &#128086</option>
+      <option>Familiares &#128106</option>
+      <option>Sólo reserva &#127869</option>
+    </select>
+
+    <label for="cantidad" class="formulario__label">Cantidad de personas</label>
+    <input id="cantidad" type="text" maxlength="2" class="formulario__input" placeholder="" />
+
+    <label for="fecha" class="formulario__label">Fecha</label>
+    <input type="date" name="fecha" id="fecha" class="formulario__input" maxlength="2">
+
+    <div id="respuesta"></div>
+
+    <button type="button" id="submit" class="formulario__submit">Solicitar Reserva<i class="fa-brands fa-whatsapp"></i>
+    </button>
+  <div class="copyright">
+    <a>Developed by bdc-creations inc.® </a>
+  </div>
+  </form>
+
+  <script src="js/form.js"></script>
+</body>
+
+</html>
